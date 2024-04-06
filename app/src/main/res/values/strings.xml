@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="go_second_activity">Открыть SecondActivity</string>
+    <string name="go_second_fragment">Открыть SecondFragment</string>
+    <string name="relative_layout">RelativeLayout</string>
+    <string name="constraint_layout">ConstraintLayout</string>
+    <string name="edit_text_hint">Тут можно ввести текст</string>
+    <string name="close_button_text">отправить введенный данные из дочернего фрагмента</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send_data_to_prev_frag">отправить данные в пердыдущий фрагмент</string>
+    <string name="listview">ListView</string>
+    <string name="recycleview">RecycleView</string>
+    <string name="to_third_fragment">To Third Fragment</string>
+    <string name="to_second_fragment">To Second Fragment</string>
+    <string name="to_first_fragment">To First Fragment</string>
+    <string name="second_fragment">Second fragment</string>
+    <string name="third_fragment">Third Fragment</string>
+</resources>

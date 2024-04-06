@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/PR5FirstFragment">
+
+    <fragment
+        android:id="@+id/PR5FirstFragment"
+        android:name="com.example.myapp.fragments.pr5.PR5FirstFragment"
+        android:label="fragment_p_r5_first"
+        tools:layout="@layout/fragment_p_r5_first" >
+        <action
+            android:id="@+id/action_PR5FirstFragment_to_PR5ThirdFragment"
+            app:destination="@id/PR5ThirdFragment" />
+        <action
+            android:id="@+id/action_PR5FirstFragment_to_PR5SecondFragment"
+            app:destination="@id/PR5SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PR5SecondFragment"
+        android:name="com.example.myapp.fragments.pr5.PR5SecondFragment"
+        android:label="fragment_p_r5_second"
+        tools:layout="@layout/fragment_p_r5_second" >
+        <action
+            android:id="@+id/action_PR5SecondFragment_to_PR5FirstFragment"
+            app:destination="@id/PR5FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PR5ThirdFragment"
+        android:name="com.example.myapp.fragments.pr5.PR5ThirdFragment"
+        android:label="fragment_p_r5_third"
+        tools:layout="@layout/fragment_p_r5_third" >
+        <action
+            android:id="@+id/action_PR5ThirdFragment_to_PR5FirstFragment"
+            app:destination="@id/PR5FirstFragment" />
+    </fragment>
+</navigation>
