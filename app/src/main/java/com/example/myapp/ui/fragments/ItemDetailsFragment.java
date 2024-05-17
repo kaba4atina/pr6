@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.myapp.R;
+import com.example.myapp.data.ExternalStorageUtils;
 import com.example.myapp.databinding.FragmentItemDetailsBinding;
 import com.example.myapp.databinding.FragmentRecycleViewBinding;
 
@@ -24,7 +25,7 @@ public class ItemDetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentItemDetailsBinding.inflate(getLayoutInflater());
-
+        ExternalStorageUtils.saveToExternalStorage("myFile2.txt", "my data");
         vm = new ViewModelProvider(this).get(DetailsViewModel.class);
 
         return binding.getRoot();

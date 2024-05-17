@@ -1,5 +1,8 @@
 package com.example.myapp.ui.fragments;
 
+import android.app.Application;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.myapp.data.SaveToFileUtils;
 import com.example.myapp.data.model.Item;
 import com.example.myapp.ui.Utils;
 import com.example.myapp.ui.adapters.RecycleViewAdapter;
@@ -30,6 +34,13 @@ public class RecycleViewFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentRecycleViewBinding.inflate(getLayoutInflater());
 
+        SharedPreferences sharedPreferences = requireContext().getSharedPreferences("MY_PREFS", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("MY_KEY", "my_data");
+        editor.apply();
+
+        SaveToFileUtils.saveToFile(requireContext(), "string data.txt", "myFile");
+        vm.setApplication((Application)requireContext().getApplicationContext());
         vm = new ViewModelProvider(this).get(ListViewModel.class);
         return binding.getRoot();
     }

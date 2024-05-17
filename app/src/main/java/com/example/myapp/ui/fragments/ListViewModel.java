@@ -1,5 +1,7 @@
 package com.example.myapp.ui.fragments;
 
+import android.app.Application;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -12,19 +14,24 @@ import java.util.List;
 
 public class ListViewModel extends ViewModel {
     private ItemsRepository itemsRepository;
-    private final MutableLiveData<ArrayList<Item>> activeItems = new MutableLiveData<>();
+    private MutableLiveData<List<Item>> activeItems = new MutableLiveData<>();
 
-    public LiveData<ArrayList<Item>> getActiveItemsLiveData() {
+    public LiveData<List<Item>> getActiveItemsLiveData() {
         return activeItems;
+    }
+
+    private Application application = null;
+    public void setApplication(Application application) {
+        this.application = application;
     }
 
     public ListViewModel() {
         itemsRepository = new ItemsRepository();
-        activeItems.setValue(itemsRepository.getItems());
+        activeItems = itemsRepository.getItems(application);
     }
 
     public void setFirstItemsActive() {
-        activeItems.setValue(itemsRepository.getItems());
+        activeItems = itemsRepository.getItems(application);
     }
     public void setAnotherItemsActive() {
         activeItems.setValue(itemsRepository.getAnotherItems());
