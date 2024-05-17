@@ -1,4 +1,7 @@
-package com.example.myapp;
+package com.example.myapp.ui;
+
+import com.example.myapp.R;
+import com.example.myapp.data.model.Item;
 
 import java.util.ArrayList;
 
@@ -17,7 +20,10 @@ public class Utils {
         for (int i = 0; i < 200; i++) {
             list.add(
                     new Item(
-                            "item " + (i + 1),
+                            i,
+                            "description of item" + (i + 1),
+                            "subtitle of item" + (i + 1),
+                            "title of item" + (i + 1),
                             R.drawable.ic_android_black_24dp
                     )
             );

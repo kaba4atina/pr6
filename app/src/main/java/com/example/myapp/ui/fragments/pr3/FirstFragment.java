@@ -1,4 +1,4 @@
-package com.example.myapp.fragments.pr3;
+package com.example.myapp.ui.fragments.pr3;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,10 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.myapp.R;
-import com.example.myapp.Utils;
+import com.example.myapp.ui.Utils;
 import com.example.myapp.databinding.FragmentFirstBinding;
-import com.example.myapp.fragments.pr4.ListViewFragment;
 
 public class FirstFragment extends Fragment {
 

@@ -1,21 +1,19 @@
-package com.example.myapp.fragments.pr4;
+package com.example.myapp.ui.fragments.pr4;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.myapp.R;
-import com.example.myapp.Utils;
-import com.example.myapp.adapters.ListViewAdapter;
+import com.example.myapp.ui.Utils;
+import com.example.myapp.ui.adapters.ListViewAdapter;
 import com.example.myapp.databinding.FragmentListViewBinding;
 
 public class ListViewFragment extends Fragment {

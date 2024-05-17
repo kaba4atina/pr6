@@ -1,4 +1,4 @@
-package com.example.myapp;
+package com.example.myapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,10 +6,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.util.Log;
 
 import com.example.myapp.databinding.ActivityMainBinding;
-import com.example.myapp.fragments.pr4.GoToListsFragment;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -16,4 +16,5 @@
     <string name="to_first_fragment">To First Fragment</string>
     <string name="second_fragment">Second fragment</string>
     <string name="third_fragment">Third Fragment</string>
+    <string name="change">change</string>
 </resources>

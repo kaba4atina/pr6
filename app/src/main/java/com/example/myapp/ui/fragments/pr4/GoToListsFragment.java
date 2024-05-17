@@ -1,4 +1,4 @@
-package com.example.myapp.fragments.pr4;
+package com.example.myapp.ui.fragments.pr4;
 
 import android.os.Bundle;
 
@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.myapp.R;
 import com.example.myapp.databinding.FragmentGoToListsBinding;
 
 public class GoToListsFragment extends Fragment {

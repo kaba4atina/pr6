@@ -1,4 +1,4 @@
-package com.example.myapp.fragments.pr3;
+package com.example.myapp.ui.fragments.pr3;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.myapp.R;
-import com.example.myapp.Utils;
+import com.example.myapp.ui.Utils;
 import com.example.myapp.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment {

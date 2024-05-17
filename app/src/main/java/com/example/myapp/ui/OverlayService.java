@@ -1,4 +1,4 @@
-package com.example.myapp;
+package com.example.myapp.ui;
 
 import android.app.Service;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+import com.example.myapp.R;
 
 public class OverlayService extends Service {
     private WindowManager windowManager;

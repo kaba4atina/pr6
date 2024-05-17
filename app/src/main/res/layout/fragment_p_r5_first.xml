@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.pr5.PR5FirstFragment">
+    tools:context=".ui.fragments.pr5.PR5FirstFragment">
 
     <TextView
         android:id="@+id/screen_title"

@@ -1,4 +1,4 @@
-package com.example.myapp.adapters;
+package com.example.myapp.ui.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.example.myapp.Item;
+import com.example.myapp.data.model.Item;
 import com.example.myapp.R;
 
 import java.util.ArrayList;
@@ -35,7 +35,7 @@ public class ListViewAdapter extends ArrayAdapter<Item> {
         TextView textView = view.findViewById(R.id.list_item_text_view);
         ImageView imageView = view.findViewById(R.id.list_item_image_view);
         Item item = items.get(position);
-        textView.setText(item.text);
+        textView.setText(item.title);
         imageView.setImageDrawable(parent.getContext().getDrawable(item.imageRes));
         return view;
     }

@@ -16,10 +16,10 @@
         android:theme="@style/Theme.MyApp"
         tools:targetApi="33">
         <activity
-            android:name=".SecondActivity"
+            android:name=".ui.SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <service
-            android:name=".OverlayService">
+            android:name=".ui.OverlayService">
         </service>
     </application>
 
